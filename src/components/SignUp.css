@@ -1,0 +1,97 @@
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3.5rem 2.5rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.details h1 {
+    color: var(--DarkSlateGrey);
+    font-size: 3.2rem;
+}
+
+.details p {
+    color: var(--DarkSlateGrey);
+}
+
+.email-div {
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+button {
+    background-color: var(--DarkSlateGrey);
+    color: var(--White);
+    font-size: 0.9rem;
+    font-weight: 700;
+    height: 3rem;
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    border: 2px solid darkorange;
+}
+
+button:active {
+    background-color: var(--CharcoalGrey);
+    border: 3px solid lightgoldenrodyellow;
+}
+
+input {
+    height: 3rem;
+    font-size: 1rem;
+    text-indent: 12px;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--CharcoalGrey);
+}
+
+b {
+    color: var(--DarkSlateGrey);
+}
+
+input::placeholder {
+    margin-left: 2rem;
+    text-indent: 12px;
+}
+
+.email-div b {
+    font-size: 0.8rem;
+}
+
+.UpdateItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.updateList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--CharcoalGrey);
+}
+
+.UpdateItem span {
+    margin: 0.2rem 0;
+}
+
+@media screen and (max-width: 375px) {
+    .left-section {
+        width: 100%;
+    }
+}

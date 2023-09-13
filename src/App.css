@@ -1,38 +1,50 @@
 .App {
-  text-align: center;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    /*width: 80vw;*/
+    gap: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.right-section {
+    background-image: url("assets/images/illustration-sign-up-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    border-radius: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media screen and (max-width: 375px) {
+    .App {
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .right-section {
+        background-image: url("assets/images/illustration-sign-up-mobile.svg");
+        width: 100%;
+        height: 284px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.success {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 1.5rem;
+    padding: 0.5rem 1.4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.success img {
+    width: 64px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.success h1 {
+    font-size: 2.5rem;
+}
+
+.success button {
+    margin-bottom: 1rem;
 }
