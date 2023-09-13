@@ -19,4 +19,4 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://leafy-dragon-37b09b.netlify.app)
+- [Live Site](https://leafy-dragon-37b09b.netlify.app)
